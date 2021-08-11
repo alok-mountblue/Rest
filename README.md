@@ -3,7 +3,6 @@
 
 Representational State Transfer (REST) is a style that defines a set of rules to be used for creating web services. An API is an interface in which one program or website talks to each other. They are used to share data and services. REST API is a way of accessing web services in a simple and flexible way without having any processing. It is used to fetch or give some information from a web service. All communication done via REST API uses only HTTP requests. 
 
-![About Rest](https://www.seobility.net/en/wiki/images/f/f1/Rest-API.png)
 
 ## Working
 
@@ -42,7 +41,6 @@ The client, server, and any intermediate components can cache all resources to i
  | 403 (FORBIDDEN) |	The client does not have permission to access this resource.|
  | 404 (NOT FOUND) |	The resource could not be found at this time. It is possible it was deleted or does not exist yet.|
  
-
 #### The REST API to the example app is described below.
 
 ### Request
@@ -51,7 +49,6 @@ GET /thing/
 
     curl -i -H 'Accept: application/json' http://localhost:7000/thing/
 ```
-
 ### Response
 ```HTML
     HTTP/1.1 200 OK
@@ -72,7 +69,6 @@ POST /thing/
 
     curl -i -H 'Accept: application/json' -d 'name=Foo&status=new' http://localhost:7000/thing
  ```
-
 ### Response
 
     HTTP/1.1 201 Created
@@ -104,7 +100,6 @@ GET /thing/id
     Content-Length: 36
 
     {"id":1,"name":"Foo","status":"new"}
-
 
 ## Refernce Links
 
