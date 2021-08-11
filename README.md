@@ -11,12 +11,12 @@ A request is sent from client to server in the form of web URL as HTTP Get or Po
 
 In HTTP there are four methods which are commonly used in a REST based Architecture like POST, GET, PUT and DELETE. These correspond to create, read, update, and delete (or CRUD) operations respectively. There are other methods which are less frequently used like OPTIONS and HEAD. 
 
-=======
+
 Interaction in REST based systems happen through Internet Hypertext Transfer Protocol (HTTP).
 
-* Get  : The HTTP GET method is used to read (or retrieve) a representation of a resource. In the safe path, GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it returns a 404 (NOT FOUND) or 400 (BAD REQUEST). 
+* GET: The HTTP GET method is used to read (or retrieve) a representation of a resource. In the safe path, GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it returns a 404 (NOT FOUND) or 400 (BAD REQUEST). 
  
-* Post : The POST verb is used to create new resources. On successful creation, return HTTP status 201, returning a Location header with a link to the newly-created resource with the 201 HTTP status. 
+* POST: The POST verb is used to create new resources. On successful creation, return HTTP status 201, returning a Location header with a link to the newly-created resource with the 201 HTTP status. 
  
 * PUT: It is used for updating the already exiting code. However, PUT can also be used to create a resource in the case where the resource ID is chosen by the client instead of by the server. In other words, if the PUT is to a URI that contains the value of a non-existent resource ID. On successful update, return 200 (or 204 if not returning any content in the body) from a PUT. If using PUT for create, return HTTP status 201 on successful creation.
  
